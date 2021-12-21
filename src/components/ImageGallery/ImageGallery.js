@@ -25,7 +25,7 @@ class ImageGallery extends React.Component {
                 .then(data => this.setState({ data: data.hits, totalhits: data.totalHits, status: 'resolved' }))
                 .catch(error => this.setState({ error, status: 'rejected' }))
                 .finally(() => this.setState({ loading: false }));
-            console.log(page)
+            // console.log(page)
         };        
         
         if (prevState.page !== this.state.page) {            
